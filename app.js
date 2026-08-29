@@ -164,5 +164,103 @@ if(str[0] === 'a' && str.length > 3){
     console.log("it is not good string");
 }
 
+// 0,NaN ,""(empty string) ,-0 ,null,undefined are false values
+
+//switch statement
+
+let day = 10;
+
+switch(day){
+    case 1 : console.log("Monday");
+             break;
+    case 2 : console.log("Tuesday");
+             break;
+    case 3 : console.log("Wednesday");
+             break;
+    case 4 : console.log("Thursday");
+             break;
+    case 5 : console.log("Friday");
+             break;
+    case 6 : console.log("Satursday");
+             break;
+    case 7 : console.log("Sunday");
+             break;
+    default : console.log("Invalid choice");                
+}
+
+//alert ,prompt and different types of console output like log ,error ,warn
+
+// alert("this is an alert message");
+
+// let FirstNm = prompt("Enter your first name :");
+// console.log(`hello ${FirstNm} !!`);
+// console.error(`hello ${FirstNm} !!`);
+// console.warn(`hello ${FirstNm} !!`);
+
+
+//Practice question day 2
+
+let num = 100;
+
+if(num % 10 == 0){
+    console.log("good");
+}else{
+    console.log("bad");
+}
+
+// let Name = prompt("Enter your Name :");
+// age = prompt("Enter your age :");
+// alert(`${Name} is ${age} years old`);
+
+let month = 1;
+
+switch(month) {
+
+    case 1 : console.log("January , February , March");
+             break;
+    case 2 : console.log("April , May , June");
+             break;
+    case 3 : console.log("July , August , September");
+             break;
+    case 4 : console.log("October , November , December");
+             break;
+    default : console.log("Invalid choice");
+}
+
+
+let string = "Appler";
+
+if((string[0] === 'A' || string[0] == 'a') && (string.length > 5)){
+    console.log("golden string");
+} else{
+    console.log("Not golden string");
+}
+
+
+let num1 = 10 , num2 = 20 , num3 = 30;
+
+if(num1 > num2){
+    if(num1 > num3){
+        console.log(`${num1} is greater`);
+    }else{
+        console.log(`${num3} is greater`);
+    }
+}else{
+    if(num2 > num3){
+        console.log(`${num2} is greater`);
+    }else{
+        console.log(`${num3} is greater`);
+    }
+}
+
+let no1 = 35 , no2 = 47852;
+
+if((no1 % 10) === (no2 % 10)){
+    console.log("both have same last digit");
+}else{
+    console.log("both does not have same last digit");
+}
+
+
 
 
