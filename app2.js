@@ -67,3 +67,46 @@ console.log(name.replace("Apna","Our")); //OurCollege
 console.log(name.slice(4).replace("l","t"));
 
 
+//Array 
+
+let marks = [56,67,89,90];
+
+console.log(marks);
+console.log(marks[0]);
+console.log(marks[1]);
+console.log(marks[2]);
+console.log(marks[3]);
+console.log(marks[4]);
+
+let mixArr = ["Bhagyashree" , 93.94 , 53];
+
+console.log(mixArr);
+
+//empty array
+
+empArr = [];
+
+//array without name 
+
+console.log([1,2,3,4].length);
+
+console.log(mixArr[0].length); //give length of index 0 string 
+
+console.log(mixArr[0][0]); //give character of index 0 and position 0 
+
+console.log(mixArr[0][1]);
+
+// change value in array 
+
+console.log(marks);
+
+marks[0] = 99;
+
+console.log(marks);
+
+marks[8] = 50;
+
+console.log(marks);
+
+console.log(marks.length);
+
