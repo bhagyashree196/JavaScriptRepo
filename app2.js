@@ -110,3 +110,70 @@ console.log(marks);
 
 console.log(marks.length);
 
+cars =["bmw","audi","maruti"]
+console.log(cars);
+console.log(cars.push("Toyota"));
+
+console.log(cars);
+
+console.log(cars.pop());
+
+console.log(cars);
+
+console.log(cars.unshift("Toyota"));
+
+console.log(cars);
+
+console.log(cars.shift());
+
+console.log(cars);
+
+// change below array to - july june march august
+
+let months =["january","july","march","august"];
+
+console.log(months);
+console.log(months.shift());
+console.log(months.shift());
+console.log(months.unshift("june"));
+console.log(months.unshift("july"));
+console.log(months);
+
+//indexOf() return the index of element and -1 if not present 
+
+console.log(cars);
+console.log(cars.indexOf("bmw"));
+console.log(cars.indexOf("BMW"));
+console.log(cars.indexOf("toyota"));
+
+console.log(cars.includes("bmw"));
+console.log(cars.includes("toyota"));
+
+// reverse() method in array  changes are stored in original array
+
+console.log(cars);
+console.log(cars.reverse());
+console.log("After reverse : ",cars);
+
+//slice() - copies the protion of array 
+
+console.log(cars.slice());
+console.log(cars.slice(1));
+console.log(cars.slice(1,3));
+console.log(cars.slice(-2));
+
+// splice() - replace ,delete and used to add elements in from starting index splice(Start , deletecount, item0,...,itemN); it make changes in original array
+
+
+console.log(cars.push("Porsche"));
+console.log(cars.push("ferrari"));
+console.log(cars);
+
+console.log(cars.splice(4));
+console.log(cars);
+console.log(cars.splice(0,1));
+console.log(cars);
+console.log(cars.splice(1,0,"Honda","TVS"));
+console.log(cars);
+
+
