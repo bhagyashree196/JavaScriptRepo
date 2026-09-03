@@ -139,6 +139,7 @@ console.log(months.unshift("june"));
 console.log(months.unshift("july"));
 console.log(months);
 
+
 //indexOf() return the index of element and -1 if not present 
 
 console.log(cars);
@@ -176,4 +177,106 @@ console.log(cars);
 console.log(cars.splice(1,0,"Honda","TVS"));
 console.log(cars);
 
+//sort() - sort the array works properly only on characters 
 
+console.log(cars);
+console.log(cars.sort());
+
+let chars = ['b','d','e','a','c'];
+console.log(chars.sort());
+
+// change below array to - july june march august using splice()
+
+months =["january","july","march","august"];
+
+console.log(months);
+
+months.splice(0,2,"july","june");
+
+console.log(months);
+
+let lang = ['C','C++','HTML','Javascript','Python','java','C#','sql'];
+
+console.log("Javascript index after reverse :",lang.reverse().indexOf('Javascript'));
+
+// Array Refrences 
+
+console.log(chars);
+
+let charCopy = chars;
+
+console.log(charCopy);
+
+charCopy.push('f');
+
+console.log(chars);
+
+chars.pop();
+console.log(charCopy);
+
+//constant array - we cannot change it completely but we can push and pop the elements
+
+const arr =[1,2,3];
+console.log(arr);
+
+arr.push(4);
+console.log(arr);
+arr.pop();
+console.log(arr);
+
+arr.unshift(2);
+console.log(arr);
+
+//arr = [4,5,6]; //it gives error cannot change constant variable
+
+//Nested Array
+
+let nestArr = [[1,2],[3,4],[5,6]];
+
+console.log(nestArr);
+
+console.log("Length of array : ",nestArr.length);
+console.log("Length of index 1 :",nestArr[1].length);
+
+console.log("Element at index 0 1 : ",nestArr[0][1]);
+
+//tic-tac-toe below state
+
+let multiArr = [["X",null,"O"],[null,"X",null],["O",null,"X"]];
+
+console.log(multiArr);
+
+multiArr[0][1] = "O";
+
+//Assignment 
+let n = 3;
+let array = [7,9,0,-2];
+console.log(array.slice(0,n));
+
+console.log(array.slice(-n));
+console.log(array.slice(array.length - n));
+
+let str2 = "Madam";
+if(str2.length == 0){
+    console.log("String is blank");
+}else{
+    console.log("string is not blank");
+}
+
+let index = 1;
+
+if(str2[index] == str2[index].toLowerCase()){
+    console.log("character is lower case");
+}else{
+    console.log("Character is not lower case");
+}
+
+let str3 = "   Hello    ";
+
+console.log("trimmed string : ", str3.trim());
+
+if(array.includes(4)){
+    console.log("element present");
+}else{
+    console.log("element not present");
+}
