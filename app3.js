@@ -27,3 +27,39 @@ console.log("backwords");
 for(let even = 10 ; even >= 1 ; even -= 2){
     console.log(even);
 }
+
+//Multiplication table 
+console.log("Multiplication table : ")
+let n = prompt("Enter a number :");
+n = parseInt(n);
+
+for(let i = n ; i <= n * 10 ; i += n){
+    console.log(i);
+}
+
+// nested loop 
+
+for(let i = 1 ; i <= 3 ; i++){
+    console.log(`outer loop ${i}`);
+    for(let j = 1 ; j <= 3 ; j++){
+        console.log(j);
+    }
+}
+
+//while loop 
+
+let i = 1;
+console.log("While loop");
+while(i <= 5){
+    console.log(i);
+    i++;
+}
+
+console.log("While loop reverse");
+
+i = 5;
+while(i >= 0){
+    console.log(i);
+    i--;
+}
+
