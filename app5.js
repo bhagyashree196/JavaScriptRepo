@@ -224,3 +224,99 @@ const calc = {
 
 console.log(calc.add(2,3));
 console.log(calc.sub(10,5));
+
+
+//Write a JavaScript function that returns array elements larger than a number.
+
+let arr = [35,43,18,12,67,23,56]; 
+num = 50;
+
+function largerThanNumber(arr,no){
+    let result = [];
+    let count = 0;
+    for(let i = 0 ; i < arr.length ; i++){
+        if(arr[i] > no){
+            result[count] = arr[i];
+            count++;
+        }
+    }
+    return result;
+}
+
+console.log("Returns array elements larger than number");
+let result = largerThanNumber(arr,num);
+console.log("Numbers greater than ",num ,"are ",result);
+
+//unique characters from string 
+
+console.log("Unique characters from string");
+
+let str = "abcdabcdefgggh";
+
+function uniqueChar(str){
+    let characters ="";
+    for(let i = 0 ; i < str.length ; i++){
+        let curr = str[i];
+        if(characters.indexOf(curr) == -1){
+            characters += curr;
+        }
+    }
+    return characters;
+}
+
+result = uniqueChar(str);
+console.log("unique characters from string is : ",result);
+
+
+//longest country name 
+
+console.log("Display longest country name");
+
+let country = ["Australia","Germany","United States of America"];
+
+function longestCountryName(country){
+    let ansIdx = 0;
+    for(let i = 0 ; i < country.length ; i++){
+        let ansLen = country[ansIdx].length; 
+        if(country[i].length > ansLen){
+            ansIdx = i
+        }
+    }
+    return country[ansIdx];
+}
+
+result = longestCountryName(country);
+console.log("Longest country name : ",result);
+
+
+//count number of vowels 
+
+console.log("Count the number of vowels");
+str = "apnacollege";
+function countVowels(str){
+    let count = 0;
+    for(let i = 0 ; i < str.length ; i++){
+        if(
+            (str[i] == 'a') || 
+            (str[i] == 'e') ||
+            (str[i] == 'i') ||
+            (str[i] == 'o') ||
+            (str[i] == 'u')
+        ){
+            count++;
+        }
+    }
+    return count;
+}
+
+result = countVowels(str);
+console.log("count of vowels : ",result);
+
+//genrate random number within range 
+
+function randomNum(start,end){
+    let diff = start - end;
+    let random = Math.floor(Math.random() * diff) + end;
+    console.log("Random number : ",random);
+}
+randomNum(200,500);
