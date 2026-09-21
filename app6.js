@@ -88,9 +88,58 @@ const stud ={
     }
 
 };
-console.log(stud);
-stud.getName();
-stud.getMarks();
+// console.log(stud);
+// stud.getName();
+// stud.getMarks();
 
-stud.getInfo1();
-stud.getInfo2();
+// stud.getInfo1();
+// stud.getInfo2();
+
+// arrow function that returns square of N 
+
+const square = (n) =>{
+    return (n*n);
+}
+console.log("Square is : ",square(4));
+
+
+// let id2 = setInterval(() =>{
+//     console.log("Hello world");
+// },2000);
+
+// setTimeout(() =>{
+//     clearInterval(id2);
+// },10000);
+
+//Assignment Questions 
+
+let  ArrAvg = (arr) =>{
+    let sum = 0;
+    for(let i = 0 ; i < arr.length ; i++){
+        sum += arr[i];
+    }
+    let avg = sum / arr.length;
+    console.log("Average is : ", avg);
+}
+
+let num = [10,20,30,40,50];
+ArrAvg(num);
+
+let isEven = (n) =>{
+    if(n % 2 == 0){
+        console.log("Number is even");
+    } else{
+        console.log("Number is not even");
+    }
+}
+
+isEven(4);
+
+const object = {
+    message: 'Hello, World!',
+    logMessage() {
+        console.log(this.message);  
+    }
+};
+
+setTimeout(object.logMessage, 1000);
