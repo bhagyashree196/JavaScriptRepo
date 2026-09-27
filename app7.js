@@ -109,3 +109,105 @@ function sum(a,b = 2){
 }
 console.log(sum(1,3));
 console.log(sum(3));
+
+//spread - Expands an iterable into multiple values 
+
+console.log(...nums);
+console.log(Math.min(...nums));
+
+//spread on literals 
+
+nums =[1,2,3,4,5,6];
+newArr = [...nums];
+
+console.log(newArr);
+
+console.log(..."Hello");
+
+let odd = [2,4,6,8,10];
+even = [1,3,5,7,9];
+
+nums = [...odd , ...even];
+console.log(nums);
+
+//spread on object literals 
+
+const data = {
+    email : "abc@gmail.com",
+    password : "abc@123"
+};
+
+const dataCopy = {...data, id : 123};
+
+console.log(dataCopy);
+
+// array into objects 
+
+const obj = {...nums};
+console.log(obj);
+
+//Rest - takes indefinte values and bundle them in array 
+
+function sum(...args){
+    return args.reduce((sum,el) => sum + el);
+}
+console.log(sum(1,2,3,4));
+
+// by default arguments are stored in "arguments" collection array function does not work on this
+
+function Print(){
+    console.log(arguments);
+    console.log(arguments[0]);
+    console.log(arguments[1]);
+}
+Print(1,2,3);
+
+//Destructuring of array- stores values of array into variable
+
+let names = ["Kartik","Vishal","Yash","Jay","Suraj"];
+
+let [winner , runnerup ,...others] = names;
+console.log(names);
+console.log(winner);
+console.log(runnerup);
+console.log(others);
+
+//Destructuring of object 
+
+const student ={
+    name : "Kartik",
+    age : 20,
+    subjects : ["Math","DBMS","Java"],
+    username : "kartik@123",
+    password : "1234"
+};
+
+let {username : user , password : secrete, city = "Pune"} = student;
+
+console.log(user);
+console.log(secrete);
+console.log(city);
+
+//Practice Qs
+
+nums = [1,2,3,4,5];
+const square = nums.map((num) => (num * num));
+console.log(square);
+
+sum = square.reduce((add , el) => add + el , 0);
+
+let avg = sum / nums.length;
+console.log("Average : ",avg);
+
+
+
+//Practice Qs
+res = nums.map((num) => num + 5);
+console.log("Result : ",res);
+
+
+//Practice Qs
+strArr =["alia","bob","yash"];
+res = strArr.map((str) => str.toUpperCase());
+console.log("String : ", res);
+
