@@ -211,3 +211,20 @@ strArr =["alia","bob","yash"];
 res = strArr.map((str) => str.toUpperCase());
 console.log("String : ", res);
 
+//Practice Qs
+
+const doubleAndReturnArgs = (arr,...args) =>(
+    [...arr , args.map((num) => num * 2)]
+);
+
+console.log(doubleAndReturnArgs([1,2,3],4,5));
+console.log(doubleAndReturnArgs([2],3,4));
+
+//Practice Qs 
+
+const mergeObjects =(obj1,obj2) =>{
+    return {...obj1,...obj2};
+};
+const obj1 = {a : 10 , b : 20};
+const obj2 = {c : 30 , d : 40};
+console.log(mergeObjects(obj1,obj2));
