@@ -45,3 +45,17 @@ console.log(img.getAttribute('id'));
 img.setAttribute('class','Images');
 console.log(img.getAttribute('class'));
 
+// document.querySelector('h1').style.color = 'red';
+
+// document.querySelector('h1').style.backgroundColor = 'green';
+
+console.dir(document.querySelector('h1').classList);
+
+document.querySelector('h1').classList.add('green');
+document.querySelector('h1').classList.add('underline');
+
+document.querySelector('h1').classList.remove('green');
+
+console.dir(document.querySelector('.box').classList.toggle('yellowBg'));
+
+console.dir(document.querySelector('.box').classList.toggle('yellowBg'));
